@@ -39,7 +39,7 @@ public class BinaryTree<dataType>
    
    public void visit ( BinaryTreeNode<dataType> node )
    {
-      System.out.println (node.data);
+      System.out.println (node.data + " " + node.statement + " " + node.score);
    }
    
    public void preOrder ()
