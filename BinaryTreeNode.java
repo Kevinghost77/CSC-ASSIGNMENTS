@@ -11,6 +11,7 @@ public class BinaryTreeNode<dataType>
    dataType score;
    BinaryTreeNode<dataType> left;
    BinaryTreeNode<dataType> right;
+   int height;
    
    public BinaryTreeNode ( dataType d, dataType Statement, dataType Score , BinaryTreeNode<dataType> l, BinaryTreeNode<dataType> r )
    {
@@ -19,8 +20,11 @@ public class BinaryTreeNode<dataType>
       score = Score;
       left = l;
       right = r;
+      height = 0;
       
    }
+   
+   dataType getData (){return this.data;}
    
    BinaryTreeNode<dataType> getLeft () { return left; }
    BinaryTreeNode<dataType> getRight () { return right; }
